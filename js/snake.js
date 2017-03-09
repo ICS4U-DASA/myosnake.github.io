@@ -2,8 +2,15 @@ $(document).ready(function(){
 	//Canvas stuff
 	var canvas = $("#canvas")[0];
 	var ctx = canvas.getContext("2d");
-	var w = $("#canvas").width();
-	var h = $("#canvas").height();
+
+	function resize() {
+		canvas.width = window.innerWidth - 50;
+		canvas.height = window.innerHeight - 50;
+	}
+	window.addEventListener('resize', resize, false); resize();
+
+	var w = canvas.width
+	var h = canvas.height
 
 	//Lets save the cell width in a variable for easy control
 	var cw = 10;
@@ -123,9 +130,9 @@ $(document).ready(function(){
 	//Lets first create a generic function to paint cells
 	function paint_cell(x, y)
 	{
-		ctx.fillStyle = "blue";
+		ctx.fillStyle = "#73F300";
 		ctx.fillRect(x*cw, y*cw, cw, cw);
-		ctx.strokeStyle = "white";
+		ctx.strokeStyle = "#73F300";
 		ctx.strokeRect(x*cw, y*cw, cw, cw);
 	}
 
