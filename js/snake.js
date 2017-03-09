@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 	function create_snake()
 	{
-		var length = 5; //Length of the snake
+		var length = 100; //Length of the snake
 		snake_array = []; //Empty array to start with
 		for(var i = length-1; i>=0; i--)
 		{
@@ -113,7 +113,17 @@ $(document).ready(function(){
 
 		snake_array.unshift(tail); //puts back the tail as the first cell
 
-		for(var i = 0; i < snake_array.length; i++)
+		paint_head(snake_array[0].x, snake_array[0].y);
+
+		function paint_head(x, y)
+		{
+			ctx.fillStyle = "#FF2500";
+			ctx.fillRect(x*cw, y*cw, cw, cw);
+			ctx.strokeStyle = "#FF2500";
+			ctx.strokeRect(x*cw, y*cw, cw, cw);
+		}
+
+		for(var i = 1; i < snake_array.length; i++)
 		{
 			var c = snake_array[i];
 			//Lets paint 10px wide cells
@@ -135,6 +145,7 @@ $(document).ready(function(){
 		ctx.strokeStyle = "#73F300";
 		ctx.strokeRect(x*cw, y*cw, cw, cw);
 	}
+
 
 	function check_collision(x, y, array)
 	{
