@@ -1,10 +1,14 @@
 
+html{
+  overflow-x: hidden;
+}
 
 body {
   width:100%;
   weight:100%;
   background: url(../img/background.png) repeat;
   text-align: center;
+  overflow-x: hidden;
 }
 
 
