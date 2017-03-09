@@ -151,11 +151,4 @@ $(document).ready(function(){
 		else if(key == "40" && d != "up") d = "down";
 		//The snake is now keyboard controllable
 	})
-
-
-
-
-
-
-
 })

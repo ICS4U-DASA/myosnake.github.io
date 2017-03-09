@@ -1,3 +1,13 @@
+
+html, body { width:100%; height:100%; } /* just to be sure these are full screen*/
+
+canvas {
+  display: block;
+}
+
+
+
+
 a,
 
 a:visited { color: #93291b;
@@ -33,12 +43,13 @@ h1 a:hover {
 
 p {
   color: #333333;
-  font-family: "Helvetica Neue",Arial,sans-serif;
+  font-family: 'Enriqueta', arial, serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5625;
   margin-bottom: 15px;
 }
+
 .header {
   padding: 30px 0;
   border-top: 10px solid #778492;
