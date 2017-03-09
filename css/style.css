@@ -6,21 +6,15 @@ html{
 body {
   width:100%;
   weight:100%;
-  background: url(../img/background.png) repeat;
+  background: url(../img/bg.png) repeat;
   text-align: center;
   overflow-x: hidden;
   margin: 25px 10px 25px 0px;
-
-
-
 }
 
 
 
-
-
 a,
-
 a:visited { color: #93291b;
   text-decoration: none;
 }

@@ -156,6 +156,7 @@ $(document).ready(function(){
 		else if(key == "38" && d != "down") d = "up";
 		else if(key == "39" && d != "left") d = "right";
 		else if(key == "40" && d != "up") d = "down";
+		else if(key == "32") d = "pause";
 		//The snake is now keyboard controllable
 	})
 })
