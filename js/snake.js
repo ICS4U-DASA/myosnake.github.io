@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
 	//Lets save the cell width in a variable for easy control
-	var cw = 10;
+	var cw = 25;
 	var d;
 	var food;
 	var score;
@@ -32,10 +32,6 @@ $(document).ready(function(){
 		create_food(); //Now we can see the food particle
 		//finally lets display the score
 		score = 0;
-
-
-
-
 		//Lets move the snake now using a timer which will trigger the paint function
 		//every 60ms
 		if(typeof game_loop != "undefined") clearInterval(game_loop);
@@ -45,7 +41,7 @@ $(document).ready(function(){
 
 	function create_snake()
 	{
-		var length = 20; //Length of the snake
+		var length = 6; //Length of the snake
 		snake_array = []; //Empty array to start with
 		for(var i = length-1; i>=0; i--)
 		{
