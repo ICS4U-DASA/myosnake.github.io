@@ -1,4 +1,3 @@
-
 html{
   overflow-x: hidden;
 }
@@ -56,8 +55,15 @@ p {
     text-align: center;
     list-style: none;
     background-color: #f2f2f2;
+    border-width: 0px;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
+    border-radius: 0;
+    float: none;
+}
+
+#canvas{
+  padding-top: 20px;
 }
 
 footer{
