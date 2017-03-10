@@ -1,7 +1,10 @@
+
+
 $(document).ready(function(){
 	//Canvas stuff
 	var canvas = $("#canvas")[0];
 	var ctx = canvas.getContext("2d");
+
 
 	function resize() {
 		canvas.width = window.innerWidth - 50;
@@ -28,6 +31,9 @@ $(document).ready(function(){
 		create_food(); //Now we can see the food particle
 		//finally lets display the score
 		score = 0;
+
+
+
 
 		//Lets move the snake now using a timer which will trigger the paint function
 		//every 60ms
@@ -158,6 +164,9 @@ $(document).ready(function(){
 		}
 		return false;
 	}
+
+
+
 
 	//Lets add the keyboard controls now
 	$(document).keydown(function(e){
