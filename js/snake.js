@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 	//Canvas stuff
 	var canvas = $("#canvas")[0];
@@ -137,7 +135,7 @@ $(document).ready(function(){
 		paint_cell(food.x, food.y);
 		//Lets paint the score
 		var score_text = "Score: " + score;
-		ctx.fillText(score_text, 5, H)
+		document.getElementById('score').innerHTML = score_text;
 	}
 
 	//Lets first create a generic function to paint cells
