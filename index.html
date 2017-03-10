@@ -16,6 +16,10 @@ function stop_music()
 {
   audio.pause();
 }
+function restart_music()
+{
+  audio.currentTime = 0;
+}
 </script>
 <html>
 <body>
@@ -33,6 +37,7 @@ function stop_music()
 
       <a class="navbar-brand" href = "#" onclick= "play_music()"><i class = "fa fa-play"></i></a>
       <a class="navbar-brand" href = "#" onclick= "stop_music()"><i class = "fa fa-pause"></i></a>
+      <a class="navbar-brand" href = "#" onclick= "restart_music()"><i class = "fa fa-repeat"></i></a>
     </div>
 
 
