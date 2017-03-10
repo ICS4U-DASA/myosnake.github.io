@@ -8,12 +8,13 @@ $(document).ready(function(){
 
 	function resize() {
 		canvas.width = window.innerWidth - 50;
-		canvas.height = window.innerHeight - 50;
+		canvas.height = window.innerHeight - 150;
 	}
 	window.addEventListener('resize', resize, false); resize();
 
 	var w = canvas.width
 	var h = canvas.height
+
 
 	//Lets save the cell width in a variable for easy control
 	var cw = 10;

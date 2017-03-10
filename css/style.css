@@ -13,14 +13,14 @@ body {
 }
 
 
-
-a,
-a:visited { color: #93291b;
+a:visited {
+  color: #73F300;
   text-decoration: none;
 }
 
 
 a:hover {
+  color: #73F300;
   text-decoration: underline
 }
 
@@ -31,18 +31,6 @@ h1 {
   margin: 0 0 10px;
   font-size: 40px;
   font-weight: bold;
-}
-
-h1 a,
-
-h1 a:visited {
-  color: #333333
-}
-
-
-h1 a:hover {
-   color: #93291b;
-   text-decoration: none;
 }
 
 
@@ -60,6 +48,7 @@ p {
   border-top: 10px solid #778492;
   background:
 }
+
 #nav {
     width: 100%;
     margin: 0;
@@ -69,4 +58,9 @@ p {
     background-color: #f2f2f2;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
+}
+
+footer{
+  padding-top: 30px;
+  color: white;
 }
