@@ -159,9 +159,14 @@ $(document).ready(function(){
 		}
 		return false;
 	}
-
-
-
+	$(function() {
+	  $('.fa').click(function() {
+	    var wasPlay = $(this).hasClass('fa-play');
+	    $(this).removeClass('fa-play fa-pause');
+	    var klass = wasPlay ? 'fa-pause' : 'fa-play';
+	    $(this).addClass(klass)
+	  });
+	});
 
 	//Lets add the keyboard controls now
 	$(document).keydown(function(e){

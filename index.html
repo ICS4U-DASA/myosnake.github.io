@@ -16,13 +16,15 @@ function play_music()
   }else{
     audio.pause();
   }
-
-
 }
-function restart_music()
-{
+audio.onended = function() {
   audio.currentTime = 0;
+  audio.play()
 }
+
+
+
+
 </script>
 <html>
 <body>
@@ -30,14 +32,14 @@ function restart_music()
     <div class="container-fluid">
       <div class="navbar-left">
         <a class="navbar-link" href = "#" onclick= "play_music()"><i class = "fa fa-play fa-lg"></i></a>
-        <a class="navbar-link" href = "#" onclick= "restart_music()"><i class = "fa fa-repeat fa-lg"></i></a>
+        
       </div>
       <div class="navbar-right">
 
         <h4 class = "navbar-link" id="score"></h4>
       </div>
       <div class="navbar-center">
-        <h2 class = "navbar-link" id="title">Snake.js<i class = "fa fa-gamepad fa-lg"></i></h2>
+        <h2 class = "navbar-link" id="title" href = "https://github.com/ICS4U-DASA/dasa.github.io">Snake.js<i class = "fa fa-gamepad fa-lg"></i></h2>
     </div>
 
   </nav>
