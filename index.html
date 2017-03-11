@@ -9,11 +9,15 @@
 var audio = new Audio('sound/music.mp3');
 function play_music()
 {
-  audio.play();
-}
-function stop_music()
-{
-  audio.pause();
+
+  if(audio.paused){
+    audio.play();
+
+  }else{
+    audio.pause();
+  }
+
+
 }
 function restart_music()
 {
@@ -25,13 +29,15 @@ function restart_music()
   <nav id="nav" class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-left">
-        <a class="navbar-brand" href = "#" onclick= "play_music()"><i class = "fa fa-play"></i></a>
-        <a class="navbar-brand" href = "#" onclick= "stop_music()"><i class = "fa fa-pause"></i></a>
-        <a class="navbar-brand" href = "#" onclick= "restart_music()"><i class = "fa fa-repeat"></i></a>
+        <a class="navbar-link" href = "#" onclick= "play_music()"><i class = "fa fa-play fa-lg"></i></a>
+        <a class="navbar-link" href = "#" onclick= "restart_music()"><i class = "fa fa-repeat fa-lg"></i></a>
       </div>
       <div class="navbar-right">
-        <h4 id="score"></h4>
+
+        <h4 class = "navbar-link" id="score"></h4>
       </div>
+      <div class="navbar-center">
+        <h2 class = "navbar-link" id="title">Snake.js<i class = "fa fa-gamepad fa-lg"></i></h2>
     </div>
 
   </nav>
