@@ -21,6 +21,10 @@
     audio.currentTime = 0;
     audio.play()
   }
+  function repeat_music()
+  {
+    audio.currentTime = 0;
+  }
   </script>
 
 <html>
@@ -30,7 +34,7 @@
       <div class="navbar-left">
 
         <a class="navbar-link" href = "#" onclick= "play_music()"><i class = "fa fa-play fa-lg"></i></a>
-        <a class="navbar-link" href = "#" onclick= "play_music()"><i class = "fa fa-reply fa-lg"></i></a>
+        <a class="navbar-link" href = "#" onclick= "repeat_music()"><i class = "fa fa-repeat fa-lg"></i></a>
 
 
       </div>
