@@ -160,7 +160,7 @@ $(document).ready(function(){
 		return false;
 	}
 	$(function() {
-	  $('.fa').click(function() {
+	  $('.fa-play').click(function() {
 	    var wasPlay = $(this).hasClass('fa-play');
 	    $(this).removeClass('fa-play fa-pause');
 	    var klass = wasPlay ? 'fa-pause' : 'fa-play';
