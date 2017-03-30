@@ -1,4 +1,4 @@
-#MyoSnake
+# MyoSnake
 
 About the game
 
