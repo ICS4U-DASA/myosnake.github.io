@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 	function create_snake()
 	{
-		var length = 6; //Length of the snake
+		var length = 12; //Length of the snake
 		snake_array = []; //Empty array to start with
 		for(var i = length-1; i>=0; i--)
 		{
@@ -84,10 +84,10 @@ $(document).ready(function(){
 		//These were the position of the head cell.
 		//We will increment it to get the new head position
 		//Lets add proper direction based movement now
-		if(d == "right") nx++;
-		else if(d == "left") nx--;
-		else if(d == "up") ny--;
-		else if(d == "down") ny++;
+		if(d == "right") nx=nx+0.5;
+		else if(d == "left") nx=nx-0.5;
+		else if(d == "up") ny=ny-0.5;
+		else if(d == "down") ny=ny+0.5;
 
 		//Lets add the game over clauses now
 		//This will restart the game if the snake hits the wall
