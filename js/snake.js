@@ -105,6 +105,7 @@ $(document).ready(function(){
 		{
 			var tail = {x: nx, y: ny};
 			score++;
+			eat_sound.play();
 			//Create new food
 			create_food();
 		}
