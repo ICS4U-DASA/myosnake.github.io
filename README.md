@@ -1,6 +1,6 @@
 # MyoSnake
 
-About the game
+###About the game
 
 MyoSnake is a Javascript Web game that let you play a classic snake game with a Myo Armband. 
 
