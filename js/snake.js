@@ -127,6 +127,11 @@ $(document).ready(function(){
 
 		function paint_head(x, y)
 		{
+			//var eye = new Path2D();
+	    //eye.moveTo(x*cw, y*cw);
+	    // eye.arc(50, 35, 25, 0, 2 * Math.PI);
+			// ctx.fillStyle = "#ffffff";
+	    // ctx.fill(eye);
 			ctx.fillStyle = "#FF2500";
 			ctx.fillRect(x*cw, y*cw, cw, cw);
 			ctx.strokeStyle = "#FF2500";
@@ -156,6 +161,7 @@ $(document).ready(function(){
 		ctx.strokeStyle = "#73F300";
 		ctx.strokeRect(x*cw, y*cw, cw, cw);
 	}
+
 
 
 	function check_collision(x, y, array)
