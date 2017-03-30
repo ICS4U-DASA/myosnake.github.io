@@ -20,6 +20,9 @@ $(document).ready(function(){
 	var food;
 	var score;
 
+	var eat_sound = new Audio('sound/apple.wav');
+	var whoosh = new Audio('sound/whoosh.wav');
+
 	//Lets create the snake now
 	var snake_array; //an array of cells to make up the snake
 
@@ -172,11 +175,26 @@ $(document).ready(function(){
 	$(document).keydown(function(e){
 		var key = e.which;
 		//We will add another clause to prevent reverse gear
-		if(key == "37" && d != "right") d = "left";
-		else if(key == "38" && d != "down") d = "up";
-		else if(key == "39" && d != "left") d = "right";
-		else if(key == "40" && d != "up") d = "down";
-		else if(key == "32") d = "pause";
+		if(key == "37" && d != "right"){
+			d = "left";
+			whoosh.play()
+		}
+		else if(key == "38" && d != "down"){
+			d = "up";
+			whoosh.play()
+		}
+		else if(key == "39" && d != "left"){
+			d = "right";
+			whoosh.play()
+		}
+		else if(key == "40" && d != "up"){
+			d = "down";
+			whoosh.play()
+		}
+		else if(key == "32"){
+			d = "pause";
+			whoosh.play()
+		}
 		//The snake is now keyboard controllable
 	})
 })
