@@ -19,9 +19,10 @@ $(document).ready(function(){
 	var d;
 	var food;
 	var score;
-
+	//import sound
 	var eat_sound = new Audio('sound/apple.wav');
 	var whoosh = new Audio('sound/whoosh.wav');
+	var gameover = new Audio('sound/gameover.wav');
 
 	//Lets create the snake now
 	var snake_array; //an array of cells to make up the snake
@@ -93,6 +94,7 @@ $(document).ready(function(){
 		{
 			//restart game
 			init();
+			gameover.play();
 			//Lets organize the code a bit now.
 			return;
 		}
