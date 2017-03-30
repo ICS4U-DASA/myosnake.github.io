@@ -27,6 +27,9 @@ $(document).ready(function(){
 	//Lets create the snake now
 	var snake_array; //an array of cells to make up the snake
 
+	apple = new Image;
+	apple.src = "img/apple.png";
+
 	function init()
 	{
 		d = "right"; //default direction
@@ -138,7 +141,8 @@ $(document).ready(function(){
 		}
 
 		//Lets paint the food
-		paint_cell(food.x, food.y);
+		//paint_cell(food.x, food.y);
+		ctx.drawImage(apple,food.x*cw - 25, food.y*cw - 30);
 		//Lets paint the score
 		var score_text = "Score: " + score;
 		document.getElementById('score').innerHTML = score_text;
