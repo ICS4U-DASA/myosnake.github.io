@@ -1,0 +1,82 @@
+ <html>
+<head>
+
+  <style>
+    body {
+      background-color : green;
+    }
+    h1{
+      font-family: 'Enriqueta', arial, serif;
+      text-align:center;
+      font-size: 30px;
+    }
+    p{
+      font-family: 'Enriqueta', arial, serif;
+    }
+    button{
+      font-family: 'Enriqueta', arial, serif;
+      font-size: 20px;
+      border-radius: 10px;
+      background-color :red;
+      font-weight: bolder;
+      padding: 10px;
+
+      border-style: dotted;
+      border-radius: 50px;
+
+
+
+    }
+    input{
+      margin-top : 100px;
+      padding: 10px;
+      border-style: hidden;
+      border-radius: 50px;
+
+
+
+    }
+
+
+  </style>
+</head>
+  <title>TestPrep</title>
+  <body>
+
+      <h1>Boo</h1>
+      <h1>
+		  <input type="password" id="tfq" name="q" size="21" maxlength="120" value="Button">
+      </h1>
+      <br>
+      <h1>
+      <button id = "change" type = "button" onclick = "change()"> Type Text To Display Here </button>
+    </h1>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+  <script>
+  var audio = new Audio('sound/music.mp3');
+
+    function change(){
+      document.getElementById("change").innerHTML = document.getElementById("tfq").value;
+
+
+
+
+
+
+
+
+
+    }
+  </script>
+</html>

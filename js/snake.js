@@ -102,10 +102,8 @@ $(document).ready(function(){
 			return;
 		}
 
-		//Lets write the code to make the snake eat the food
-		//The logic is simple
-		//If the new head position matches with that of the food,
-		//Create a new head instead of moving the tail
+
+		
 		if(nx == food.x && ny == food.y)
 		{
 			var tail = {x: nx, y: ny};
