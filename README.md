@@ -4,7 +4,7 @@
 
 MyoSnake is a Javascript Web game that let you play a classic snake game with a Myo Armband. 
 
-You can play the game online on http://myosnake.life.
+You can play the game online on https://ics4u-dasa.github.io/myosnake.github.io/.
 
 To run it locally, you can download our repo and open ```index.html```
 
